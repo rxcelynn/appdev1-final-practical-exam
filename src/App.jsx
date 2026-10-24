@@ -1,4 +1,4 @@
-import SignUp from "./components/SignUp.jsx";
+import SignUp from "./components/SignUp/SignUp.jsx";
 
 function App() {
   return <SignUp />;

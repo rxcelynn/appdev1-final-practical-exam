@@ -1,9 +1,9 @@
-import styles from "./SignUp.module.css";
+import styles from "./Login.module.css";
 import blossom from "../assets/blossom-flower.svg";
-import googleIcon from "../assets/icons-google-logo.svg"; 
-import appleIcon from "../assets/icons-apple-logo.svg"; 
+import googleIcon from "../assets/google.svg";
+import appleIcon from "../assets/apple.svg";
 
-function SignUp() {
+function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -47,7 +47,7 @@ function SignUp() {
                 type="password"
                 id="password"
                 className={styles.input}
-                placeholder="Name"
+                placeholder="Enter your password"
               />
             </div>
 
@@ -67,12 +67,10 @@ function SignUp() {
             </button>
           </form>
 
-          {/* Divider */}
           <div className={styles.divider}>
             <span>Or</span>
           </div>
 
-          {/* Social Sign-In Buttons */}
           <div className={styles.socialButtons}>
             <button type="button" className={styles.socialBtn}>
               <img src={googleIcon} alt="Google" className={styles.socialIcon} />
@@ -84,7 +82,6 @@ function SignUp() {
             </button>
           </div>
 
-          {/* Account Text Link */}
           <p className={styles.signinText}>
             Have an account? <a href="/login" className={styles.signinLink}>Sign In</a>
           </p>
@@ -102,4 +99,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Login;
