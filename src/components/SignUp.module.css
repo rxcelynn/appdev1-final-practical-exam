@@ -29,7 +29,7 @@
   font-size: 32px;
   font-weight: 600;
   color: #000000;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .form {
@@ -113,6 +113,80 @@
   background-color: #2e471f;
 }
 
+/* Divider Styling */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #888888;
+  font-size: 11px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.divider span {
+  padding: 0 10px;
+}
+
+/* Social Buttons */
+.socialButtons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.socialBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.socialBtn:hover {
+  background-color: #f8f8f8;
+}
+
+.socialIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* Sign In Link Text */
+.signinText {
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
+  margin: 0;
+}
+
+.signinLink {
+  color: #2d60ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signinLink:hover {
+  text-decoration: underline;
+}
+
 .rightSection {
   position: relative;
   display: flex;
@@ -145,10 +219,5 @@
 
   .rightSection {
     display: none;
-  }
-
-  .blossomImage {
-    width: 100%;
-    height: auto;
   }
 }
