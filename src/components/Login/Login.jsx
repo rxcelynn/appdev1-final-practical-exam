@@ -75,7 +75,7 @@ function Login() {
           </div>
 
           <p className={styles.signinText}>
-            Have an account? <a href="/signup" className={styles.signinLink}>Sign Up</a>
+            Don't have an account? <a href="/signup" className={styles.signinLink}>Sign Up</a>
           </p>
         </div>
       </section>
