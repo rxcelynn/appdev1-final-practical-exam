@@ -1,0 +1,54 @@
+
+.signupPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eeeeee;
+}
+
+.leftSection {
+  min-width: 0;
+}
+
+.rightSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  margin: 32px 12px 7px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+
+.blossomImage {
+  display: block;
+  width: 100%;
+  max-width: 90%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+@media (max-width: 700px) {
+  .signupPage {
+    grid-template-columns: 1fr;
+  }
+
+  .leftSection {
+    display: none;
+  }
+
+  .rightSection {
+    min-height: 100vh;
+    margin: 12px;
+  }
+
+  .blossomImage {
+    width: 100%;
+    height: auto;
+  }
+}

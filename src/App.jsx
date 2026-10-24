@@ -1,12 +1,7 @@
-import { useState } from 'react'
-import './App.css'
+import SignUp from "./components/SignUp.jsx";
 
 function App() {
-  return (
-    <>
-    <h1>APPDEV 1 Final Project</h1>
-    </>
-  )
+  return <SignUp />;
 }
 
-export default App
+export default App;
