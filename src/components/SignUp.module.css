@@ -14,7 +14,14 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 120px 0 0 120px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 380px;
 }
 
 .title {
@@ -22,7 +29,88 @@
   font-size: 32px;
   font-weight: 600;
   color: #000000;
-  margin: 0;
+  margin-bottom: 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #b0b0b0;
+}
+
+.input:focus {
+  border-color: #3b5b28;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  accent-color: #3b5b28;
+}
+
+.checkboxLabel {
+  font-size: 11px;
+  color: #000000;
+}
+
+.link {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b5b28;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #2e471f;
 }
 
 .rightSection {
@@ -51,12 +139,12 @@
   }
 
   .leftSection {
-    display: none;
+    display: flex;
+    padding: 20px;
   }
 
   .rightSection {
-    min-height: 100vh;
-    margin: 12px;
+    display: none;
   }
 
   .blossomImage {
