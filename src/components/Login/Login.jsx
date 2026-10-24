@@ -20,18 +20,6 @@ function Login() {
 
           <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.inputGroup}>
-              <label htmlFor="name" className={styles.label}>
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className={styles.input}
-                placeholder="Enter your name"
-              />
-            </div>
-
-            <div className={styles.inputGroup}>
               <label htmlFor="email" className={styles.label}>
                 Email address
               </label>
@@ -62,12 +50,12 @@ function Login() {
                 className={styles.checkbox}
               />
               <label htmlFor="terms" className={styles.checkboxLabel}>
-                I agree to the <a href="#terms" className={styles.link}>terms & policy</a>
+                Remember for 30 days
               </label>
             </div>
 
             <button type="submit" className={styles.submitBtn}>
-              Signup
+              Login
             </button>
           </form>
 
@@ -87,7 +75,7 @@ function Login() {
           </div>
 
           <p className={styles.signinText}>
-            Have an account? <a href="/login" className={styles.signinLink}>Sign In</a>
+            Have an account? <a href="/signup" className={styles.signinLink}>Sign Up</a>
           </p>
         </div>
       </section>
