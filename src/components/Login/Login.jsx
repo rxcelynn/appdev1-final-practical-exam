@@ -1,7 +1,7 @@
 import styles from "./Login.module.css";
-import blossom from "../assets/blossom-flower.svg";
-import googleIcon from "../assets/google.svg";
-import appleIcon from "../assets/apple.svg";
+import blossom from "../../assets/blossom-flower.svg";
+import googleIcon from "../../assets/icons-google-logo.svg"; 
+import appleIcon from "../../assets/icons-apple-logo.svg"; 
 
 function Login() {
   const handleSubmit = (e) => {
@@ -12,7 +12,11 @@ function Login() {
     <main className={styles.signupPage}>
       <section className={styles.leftSection}>
         <div className={styles.formContainer}>
-          <h1 className={styles.title}>Get Started Now</h1>
+          {/* Part 1: Title & Subtitle */}
+          <h1 className={styles.title}>Welcome back!</h1>
+          <p className={styles.subtitle}>
+            Enter your Credentials to access your account
+          </p>
 
           <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.inputGroup}>
